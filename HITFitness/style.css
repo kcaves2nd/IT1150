@@ -1,0 +1,52 @@
+*
+{
+ margin:0 ; 
+ padding:0 ; 
+
+}
+img{
+  width: 50%;
+  margin: 1px auto;
+  display:block;
+}
+
+
+h1{
+  color: blue;
+  text-align: center;
+  border-image-outset;
+  }
+header{
+  background-image: url"/repl/equip.jpg";
+  height:100vh;
+  background-size:cover;
+  background-position:center;
+    }
+    
+    .nav-menu{
+    float: right;
+    list-style:none;
+    margin-top:30px;
+     }
+    
+.nav-menu li{
+    display: inline-block;
+    
+}
+.nav-menu li{
+    color: blue;
+    text-decoration: none;
+    padding:5px 20px;
+    font-family:"Verdona",  sans: serif;
+    }
+
+.homebtn a {
+  border: 1px solid gray;
+  background-color: white
+  
+}
+
+.nav-menu li a:hover {
+  border:1px solid grey;
+  background-color: white;
+}
