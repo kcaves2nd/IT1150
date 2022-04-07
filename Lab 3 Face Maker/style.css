@@ -1,0 +1,30 @@
+h1
+{
+	font-size: 52px;
+	color: MidnightBlue;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.container {
+	position: relative;
+	height: 500px;
+	width: 500px;
+}
+
+.faceparts{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+button
+{
+	background-color: rgb(37, 14, 184);
+	color: rgb(199, 198, 191);
+	border: solid rgb(88, 88, 85) 6px;
+	font-size: 20px;
+	padding: 10px;
+	margin: 12px;
+	border-radius: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}

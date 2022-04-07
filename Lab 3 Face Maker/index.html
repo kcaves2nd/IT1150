@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Face Maker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Face Maker</h1>
+
+    <div class="container">
+        <img id="face" class="faceparts" src="images/faces/f1.png" alt="Face">
+        <img id="eyes" class="faceparts" src="images/eyes/e1.png" alt="Eyes">
+    </div>
+
+    <button id="facebtn" onclick="changeFace()">Change Face</button>
+    <button id="eyebtn" onclick="changeEyes()">Change Eyes</button>
+
+    <script>
+        var buzzerSound = new Audio("sfx/oldDoorBell.mp3");
+
+        var faceimg = 1;
+        var eyeimg = 1;
+
+        function changeFace() {
+
+            if (faceimg == 1) {
+                document.getElementById("face").src = "images/faces/f2.png";
+                faceimg = 2;
+            }
+            else if (faceimg == 2) {
+                document.getElementById("face").src = "images/faces/f1.png";
+                faceimg = 1;
+            }
+            buzzerSound.play();
+        }
+
+        function changeEyes() {
+
+            if (eyeimg == 1) {
+                document.getElementById("eyes").src = "images/eyes/e2.png";
+                eyeimg = 2;
+            }
+            else if (eyeimg == 2) {
+                document.getElementById("eyes").src = "images/eyes/e1.png";
+                eyeimg = 1;
+            }
+            buzzerSound.play();
+        }
+    </script>
+</body>
+</html>
